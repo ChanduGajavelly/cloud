@@ -1,0 +1,11 @@
+div.jumbotron.hero-nature {
+    color: black;
+    text-align: center;
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+body {
+    background-color: #05fa94;
+    font-family: Verdana;
+    text-align: center;
+}
