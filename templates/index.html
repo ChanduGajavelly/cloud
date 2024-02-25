@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<style>
+            /* Styling the Body element i.e. Color,
+		Font, Alignment */
+body {
+	background-color: #05fa94;
+		font-family: Verdana;
+		text-align: center;
+}
+
+		/* Styling the Form (Color, Padding, Shadow) */
+		form {
+			background-color: #e2dfdf;
+			max-width: 500px;
+			margin: 50px auto;
+			padding: 30px 20px;
+			box-shadow: 2px 5px 10px rgba(0, 0, 0, 0.5);
+		}
+
+		/* Styling form-control Class */
+		.form-control {
+			text-align: left;
+			margin-bottom: 25px;
+		}
+
+		/* Styling form-control Label */
+		.form-control label {
+			display: block;
+			margin-bottom: 10px;
+		}
+
+		/* Styling form-control input,
+		select, textarea */
+		.form-control input,
+		.form-control select,
+		.form-control textarea {
+			border: 1px solid #777;
+			border-radius: 2px;
+			font-family: inherit;
+			padding: 10px;
+			display: block;
+			width: 95%;
+		}
+
+		/* Styling form-control Radio
+		button and Checkbox */
+		.form-control input[type="radio"],
+		.form-control input[type="checkbox"] {
+			display: inline-block;
+			width: auto;
+		}
+
+		/* Styling Button */
+		button {
+			background-color: #05c46b;
+			border: 1px solid #777;
+			border-radius: 2px;
+			font-family: inherit;
+			font-size: 21px;
+			display: block;
+			width: 100%;
+			margin-top: 50px;
+			margin-bottom: 20px;
+		}
+        </style>
+        <title>Home</title>
+	</head>
+	<body>
+		<h1><i><u><b>Diagnosed Survey Form</b></u></i></h1>
+		<div class="container">
+			<div class="centered">
+				<form action="{{ url_for('result') }}" method="post">
+					<div class="form-control">
+						<label for="v1"><b>Average vocal fundamental frequency</b></label>
+						<input type="text" class="form-control" id="v1" name="v1">
+					</div>
+					<div class="form-control">
+						<label for="v2"><b>Maximum vocal fundamental frequency</b></label>
+						<input type="text" class="form-control" id="v2" name="v2">
+					</div>
+					<div class="form-control">
+						<label for="v3"><b>Minimum vocal fundamental frequency</b></label>
+						<input type="text" class="form-control" id="v3" name="v3">
+					</div>
+					<div class="form-control">
+						<label for="v4"><b>MDVP jitter in percentage</b></label>
+						<input type="text" class="form-control" id="v4" name="v4">
+					</div>
+					<div class="form-control">
+						<label for="v5"><b>MDVP absolute jitter in ms</b></label>
+						<input type="text" class="form-control" id="v5" name="v5">
+					</div>	
+					<div class="form-control">
+						<label for="v6"><b>MDVP relative amplitude perturbation</b></label>
+						<input type="text" class="form-control" id="v6" name="v6">
+					</div>
+					<div class="form-control">
+						<label for="v7"><b>MDVP five-point period perturbation quotient</b></label>
+						<input type="text" class="form-control" id="v7" name="v7">
+					</div>
+					<div class="form-control">
+						<label for="v8"><b>Average absolute difference of differences between jitter cycles</b></label>
+						<input type="text" class="form-control" id="v8" name="v8">
+					</div>
+					<div class="form-control">
+						<label for="v9"><b>MDVP local shimmer</b></label>
+						<input type="text" class="form-control" id="v9" name="v9">
+					</div>
+					<div class="form-control">
+						<label for="v10"><b>MDVP local shimmer in dB</b></label>
+						<input type="text" class="form-control" id="v10" name="v10">
+					</div>
+					<div class="form-control">
+						<label for="v11"><b>Three-point amplitude perturbation quotient</b></label>
+						<input type="text" class="form-control" id="v11" name="v11">
+					</div>
+					<div class="form-control">
+						<label for="v12"><b>Five-point amplitude perturbation quotient</b></label>
+						<input type="text" class="form-control" id="v12" name="v12">
+					</div>
+					<div class="form-control">
+						<label for="v13"><b>MDVP 11-point amplitude perturbation quotient</b></label>
+						<input type="text" class="form-control" id="v13" name="v13">
+					</div>
+					<div class="form-control">
+						<label for="v14"><b>Average absolute differences between the amplitudes of consecutive periods</b></label>
+						<input type="text" class="form-control" id="v14" name="v14">
+					</div>
+					<div class="form-control">
+						<label for="v15"><b>Noise-to-harmonics ratio</b></label>
+						<input type="text" class="form-control" id="v15" name="v15">
+					</div>
+					<div class="form-control">
+						<label for="v16"><b>Harmonics-to-noise ratio</b></label>
+						<input type="text" class="form-control" id="v16" name="v16">
+					</div>
+					<div class="form-control">
+						<label for="v17"><b>Recurrence period density entropy measure</b></label>
+						<input type="text" class="form-control" id="v17" name="v17">
+					</div>
+					<div class="form-control">
+						<label for="v18"><b>Correlation dimension</b></label>
+						<input type="text" class="form-control" id="v18" name="v18">
+					</div>
+					<div class="form-control">
+						<label for="v19"><b>Signal fractal scaling exponent of detrended fluctuation analysis</b></label>
+						<input type="text" class="form-control" id="v19" name="v19">
+					</div>
+					<div class="form-control">
+						<label for="v20"><b>Two nonlinear measures of fundamental</b></label>
+						<input type="text" class="form-control" id="v20" name="v20">
+					</div>
+					<div class="form-control">
+						<label for="v21"><b>Frequency variation</b></label>
+						<input type="text" class="form-control" id="v21" name="v21">
+					</div>
+					<div class="form-control">
+						<label for="v22"><b>Pitch period entropy</b></label>
+						<input type="text" class="form-control" id="v22" name="v22">
+					</div>
+					<button type="submit" class="btn btn-dark" value="submit">Submit</button>
+				</form>
+			</div>
+		</div>
+	</body>
+</html>
